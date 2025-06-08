@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0E2148;
+    color: #E3D095;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background: #483AA0;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #E3D095;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #E3D095;
+}
+
+input {
+    padding: 12px;
+    width: 80%;
+    margin-bottom: 1rem;
+    border: 1px solid #E3D095;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #0E2148;
+    color: #E3D095;
+}
+
+input:focus {
+    border-color: #E3D095;
+    box-shadow: 0 0 5px #E3D095aa;
+    transition: all 0.3s ease-in-out;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #7965C1;
+    color: #0E2148;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #E3D095;
+    color: #0E2148;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#weatherResult {
+    margin-top: 1.5rem;
+    background: #7965C1;
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-left: 6px solid #E3D095;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#weatherResult img {
+    width: 80px;
+    height: 80px;
+    margin-top: 0.5rem;
+}
+
+#weatherResult h2 {
+    color: #0E2148;
+    margin-bottom: 0.5rem;
+}
+
+#weatherResult p {
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+    color: #0E2148;
+}
+
+#weatherResult p:nth-of-type(2) {
+    font-weight: bold;
+    color: #E3D095;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
